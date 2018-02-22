@@ -32,31 +32,31 @@ $user=trim(fgets(STDIN, 1024));
 input("Password");
 $pass=trim(fgets(STDIN, 1024));
 echo "$red =========================== Cvar1984 ))=====(@)> \n";
-echo " (01)Like\n";
-echo " (02)Love\n";
-echo " (03)Wow\n";
-echo " (04)Haha\n";
-echo " (07)Sad\n";
-echo " (08)Angry\n";
-echo " (00)Random\n";
+echo " (1)Like\n";
+echo " (2)Love\n";
+echo " (3)Wow\n";
+echo " (4)Haha\n";
+echo " (7)Sad\n";
+echo " (8)Angry\n";
+echo " (0)Random\n";
 echo "$red =========================== Cvar1984 ))=====(@)> \n";
 input("Male Reaction");
 $r_male=trim(fgets(STDIN, 1024));
-if($r_male == "00") {
+if($r_male == "0") {
 $r_male=array_rand($rand);
 }
 echo "$red =========================== Cvar1984 ))=====(@)> \n";
-echo " (01)Like\n";
-echo " (02)Love\n";
-echo " (03)Wow\n";
-echo " (04)Haha\n";
-echo " (07)Sad\n";
-echo " (08)Angry\n";
-echo " (00)Random\n";
+echo " (1)Like\n";
+echo " (2)Love\n";
+echo " (3)Wow\n";
+echo " (4)Haha\n";
+echo " (7)Sad\n";
+echo " (8)Angry\n";
+echo " (0)Random\n";
 echo "$red =========================== Cvar1984 ))=====(@)> \n";
 input("Female Reaction");
 $r_female=trim(fgets(STDIN, 1024));
-if($r_female == "00") {
+if($r_female == "0") {
 $r_female=array_rand($rand);
 }
 input("Count");

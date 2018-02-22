@@ -85,19 +85,21 @@ class Reaction
 				$r_female_e	= $this->fetch_value($html,$r_females,'" style="display:block">');
 				$r_female_l	= 'https://mobile.facebook.com/ufi/reaction/?ft_ent_identifier='.$post_id[1].'&reaction_type='.$r_female. $r_female_e;
 				$this->curl($r_female_l);
-	echo "-=[Status ID $post_id[1] => $user_gen => reacted]=-\n";
+				echo "Status ID $post_id[1] => $user_gen => reacted \n";
 			}else{
 				$r_males 	= '/ufi/reaction/?ft_ent_identifier='.$post_id[1].'&reaction_type='.$r_male;
 				$r_male_e	= $this->fetch_value($html,$r_males,'" style="display:block">');
 				$r_male_l	= 'https://mobile.facebook.com/ufi/reaction/?ft_ent_identifier='.$post_id[1].'&reaction_type='.$r_male. $r_male_e;
 				$this->curl($r_male_l);
-	echo "-=[Status ID $post_id[1] => $user_gen => reacted]=-\n";
+				echo "Status ID $post_id[1] => $user_gen => reacted \n";
 			}
 			
-		$this->curl('https://mobile.facebook.com/logout.php');
-			$waktu=array('4','5','6','7','8');
-			sleep(array_rand($waktu));
-		}		
-	}	
+			$this->curl('https://mobile.facebook.com/logout.php');
+			sleep(2);
+		}
+		
+		
+	}
+	
+	
 }
-?>
