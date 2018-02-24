@@ -95,7 +95,8 @@ class Reaction
 			}
 			
 			$this->curl('https://mobile.facebook.com/logout.php');
-			sleep('3');
+			$slp=array("4","5","3");
+			sleep(array_rand($slp));
 		}
 		
 		
